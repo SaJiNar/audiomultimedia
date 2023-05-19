@@ -12,7 +12,7 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
 
 
-        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.loqueponga);
+        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.songtoplay);
         mediaPlayer.start();
     }
 }
