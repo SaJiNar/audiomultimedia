@@ -19,14 +19,18 @@ public class MainActivity extends Activity implements View.OnClickListener {
         setContentView(R.layout.activity_main);
 
         //Añadir aqui la cancion deseada
+        //Assign the song we want to play
+        //for that we add the song at the raw directory and replace the songtoplay id so we can play it
         MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.songtoplay);
 
         //Botones para la interfaz
+        //Interface for buttons
         btnPlay = (Button) findViewById(R.id.buttonPlay);
         btnPause = (Button) findViewById(R.id.buttonStop);
         btnStop = (Button) findViewById(R.id.buttonStop);
 
         //asignar controlador de eventos
+        //Assign event handlers
         btnPlay.setOnClickListener(this);
         btnPause.setOnClickListener(this);
         btnStop.setOnClickListener(this);
